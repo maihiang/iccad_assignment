@@ -46,7 +46,6 @@ for domain in "$@"; do
     # 存储所有域名的ip
     ips[$domain]=$(ping -c 1 -w 1 $domain | grep "PING" | awk '{print $3}' | awk -F '(' '{print $2}' | awk -F ')' '{print $1}')
 
-    # echo "$domain(${ips[$domain]}) 延迟: ${delays[$domain]} ms"
 done
 
 # 对ping成功的域名按照延迟排序
