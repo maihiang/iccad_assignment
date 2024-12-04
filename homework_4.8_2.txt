@@ -1,0 +1,40 @@
+Please CAREFULLY read the questions and follow instructions to answer.
+
+(Q2.1) Why did Ubuntu get such a name? Answer briefly along with your information source.
+(Q2.2) According to the video Revolution OS, what application greatly motivated companies to use Linux instead of Windows? This information appears on which part of the video?
+
+
+(P2.1) Write a shell script (must use vi) that displays the following menu and prompts for one-character input (i.e., '1' - '6' or 'q') to invoke a menu option, as shown.
+
+1. Print a Hello World!
+2. Report how many times the script has printed Hello World! already
+3. Show all files under your home in long format, but any line containing file name beginning with "h" must be in yellow color
+4. Input a name, if the file exists and is executable, show its first 16 bytes in hexadecimal format
+5. Input a name, if the file exists and is executable, find all other files in the same directory with the same 16 bytes header
+6. Let '/usr/bin/ftp' visit alpha.gnu.org, and report what directories in '/gnu' have not changed after 2005
+q. Quit
+
+The program should allow the user to try any option any number of times and show the above menu every time after an operation, and it would quit until user gives option q as input. Option (4) and (5) prompt the user to input first.
+
+
+(P2.2) Find "demo_inout.c" from our demo bundle, try to build by "gcc -o demo_inout demo_inout.c", run the resulted executable "demo_inout". Then, let demo_inout read some text input from a file, and in the same time, send two outputs (i.e., stdout & stderr ) to other two separate files. By doing so, figure out the mechanism of stdin, stdout and stderr re-directions.
+
+
+(P2.3) Write a shell script 'pingsort' (must use vi) that takes a whole list of host names as command line arguments. The script pings each host 5 times and reports the average responding time of each host in the order of the delays (unreachable addresses are sorted by their IP addresses).
+
+The following is a running sample,
+
+$./pingsort www.zju.edu.cn www.google.com www.cnn.com wikipedia.org www.sina.com.cn
+
+www.zju.edu.cn @ 10.203.4.199 @ 6.674 ms
+www.sina.com.cn @ 67.172.201.194 @ 11.642 ms
+www.cnn.com @ 151.101.16.73 @ 192.652 ms
+
+www.google.com @ 93.46.8.89 is unreachable
+wikipedia.org @ 198.34.26.96 is unreachable
+
+The program should be able to take unlimited number of arguments (not only 5 sites as in the sample above).
+
+
+(P2.4) (OPTIONAL)
+Read manuals for command "wget" and command "cron". With the help of these commands and other utilities we have learned, try to write some shell programs which can be used to automatically visit www.bing.com every noon to download a background image to your local computer. Explain the flow first. Then, read manual of command ¡°gsettings¡±, and find how to use this image as your desktop background picture.
