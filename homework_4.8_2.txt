@@ -37,4 +37,4 @@ The program should be able to take unlimited number of arguments (not only 5 sit
 
 
 (P2.4) (OPTIONAL)
-Read manuals for command "wget" and command "cron". With the help of these commands and other utilities we have learned, try to write some shell programs which can be used to automatically visit www.bing.com every noon to download a background image to your local computer. Explain the flow first. Then, read manual of command ¡°gsettings¡±, and find how to use this image as your desktop background picture.
+Read manuals for command "wget" and command "cron". With the help of these commands and other utilities we have learned, try to write some shell programs which can be used to automatically visit www.bing.com every noon to download a background image to your local computer. Explain the flow first. Then, read manual of command ï¿½ï¿½gsettingsï¿½ï¿½, and find how to use this image as your desktop background picture.

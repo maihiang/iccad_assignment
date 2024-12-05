@@ -50,4 +50,18 @@ So it's eazy to find the solution:
 1. The script is run with arguments, so it's important to use `for domain in "$@";`.
 2. In order to check if the ping is success, I can check the return value of `ping`, using `$?`.
 3. In order to divide domains into to parts, I use two arraies to store 2 groups of domains.
-4. In order to sort two groups in different ways, I can use `sort` command.
+4. In order to sort two groups in different ways, I can use the `sort` command. `sort -k x` can sort groups of lines by column x.
+
+## P2.4
+The task can be divided into two steps:
+1. Write a script to implement functions below:
+   1. Download the dailybing picture to linux.
+   2. Set the picture as Desktop wallpaper.
+2. Use `crontab` to execute the script every 8:00.
+
+Here are steps:
+1. Find the API of dailybing. On the official website, it's easy to find its API `https://dailybing.com/api/v1/{date}/{lang}/{mode}`, and I choose to use `https://dailybing.com/api/v1/today/zh-cn/FHD`.
+2. Use `wget -O` to rename the picture downloaded and set the path to store the picture.
+3. By searching the Internet, I find the way to change the wallpaper by command: `gsettings set org.gnome.desktop.background picture-uri "file://${path}"`
+    - The script is used to set the wallpaper in `Default style` instead of `Dark style`. If you use `Dark style`, the wallpaper won't change. It's obvious that to change the wallpaper of `Dark style`, we should use another command. But I couldn't find it, which is a problem to be solved.
+4. Through Step 1 to 3, I have written a script that can implement the functions we want. Use `crontab -e` to make linux execute the script daily by adding `0 8 * * * /home/maihiang/iccad/assignment2/P2_4/script.sh`.
