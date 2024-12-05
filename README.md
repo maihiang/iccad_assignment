@@ -1,6 +1,6 @@
 # Q part
 ## Q2.1
-
+Ubuntu is named after the African philosophy of "Ubuntu," which means "humanity to others" or "I am what I am because of who we all are." This name reflects the Ubuntu project's commitment to the principles of open-source software and community collaboration.
 
 ## Q2.2
 
