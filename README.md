@@ -3,6 +3,8 @@
 Ubuntu is named after the African philosophy of "Ubuntu," which means "humanity to others" or "I am what I am because of who we all are." This name reflects the Ubuntu project's commitment to the principles of open-source software and community collaboration.
 
 ## Q2.2
+The Free Software Movement and GNU project(as well as Open source Movement).
+The information comes from the start of the video.
 
 # P part
 All scripts have been uploaded to github `https://github.com/maihiang/iccad_assignment`, and I won't repeat my codes below.
