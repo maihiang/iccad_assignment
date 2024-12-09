@@ -1,6 +1,6 @@
 # Q part
 ## Q2.1
-Ubuntu is named after the African philosophy of "Ubuntu," which means "humanity to others" or "I am what I am because of who we all are." This name reflects the Ubuntu project's commitment to the principles of open-source software and community collaboration.
+Canonical wants to bring the spirit of Ubuntu to the world of computers and software through the Ubuntu distribution. Ubuntu in African means 'humanity to others', and the spirit of it is 'I am what I am because of who we are'.
 
 ## Q2.2
 The Free Software Movement and GNU project(as well as Open source Movement).
