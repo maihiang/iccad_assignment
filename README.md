@@ -1,13 +1,13 @@
 # Q part
 ## Q2.1
-Canonical wants to bring the spirit of Ubuntu to the world of computers and software through the Ubuntu distribution. Ubuntu in African means 'humanity to others', and the spirit of it is 'I am what I am because of who we are'.
+Canonical hopes to bring the spirit of Ubuntu to the world of computers and software through the Ubuntu distribution. Ubuntu in African means 'humanity to others', and the spirit of it is 'I am what I am because of who we are'.
 
 ## Q2.2
 The Free Software Movement and GNU project(as well as Open source Movement).
 The information comes from the start of the video.
 
 # P part
-All scripts have been uploaded to github `https://github.com/maihiang/iccad_assignment`, and I won't repeat my codes below.
+All scripts have been packaged in one zip file, and you can find them in folder `P2_n`. The zip file will be uploaded to `course.zju.edu.cn` for archiving purposes because it's safe, reliable and is only access to me.
 ## P2.1
 1. First, in order to generate a code without a stop, we should use `while true;` code block.
 2. The Function 1 and 2 are close, so we should program them in the same file.
