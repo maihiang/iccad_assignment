@@ -1,10 +1,11 @@
 # Q part
 ## Q2.1
 Canonical hopes to bring the spirit of Ubuntu to the world of computers and software through the Ubuntu distribution. Ubuntu in African means 'humanity to others', and the spirit of it is 'I am what I am because of who we are'.
+information source: `https://ubuntu.com/about`
 
 ## Q2.2
-The Free Software Movement and GNU project(as well as Open source Movement).
-The information comes from the start of the video.
+The Apache web server. It was much more cost effective than IIS and NT to build a server farm.
+The information appears at 00:32:20 and the following 1 minute of the video.
 
 # P part
 All scripts have been packaged in one zip file, and you can find them in folder `P2_n`. The zip file will be uploaded to `course.zju.edu.cn` for archiving purposes because it's safe, reliable and is only access to me.
