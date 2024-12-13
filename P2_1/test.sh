@@ -1,5 +1,6 @@
 #!/bin/bash
 count="0"
+clear
 while true; do
     echo "1. Print a Hello World!"
     echo "2. Report how many times the script has printed Hello World! already"

@@ -11,27 +11,40 @@ The information appears at 00:32:20 and the following 1 minute of the video.
 All scripts have been packaged in one zip file, and you can find them in folder `P2_n`. The zip file will be uploaded to `course.zju.edu.cn` for archiving purposes because it's safe, reliable and is only access to me.
 ## P2.1
 ### Script Structure and Analysis
-1. First, in order to generate a code without a stop, we should use `while true;` code block.
-2. The Function 1 and 2 are close, so we should program them in the same file.
+#### Overall Framework
+- To write a script without ending, we should use `while true` to create an infinite loop and show menu every time.
+- In order to write each function, I choose two different ways:
+  - For function 1 and 2 which is easy to implement, I write them in the main script file.
+  - For function 3 to 6 which is a bit complex, I write them in other script files and use `source mode*.sh` in the main script file.
+- Use `break` when inputing a `q` to break the loop and ends the script.
+- Use `read input` to input the number of the function you want, and use `case` code block to execute each function.
+
+#### Function 1 & Function 2
+These two functions are close to each other and easy to implement, so I write them in the main script file.
+- I define a variable `count` at the beginning of the file, which is initially `0`, and adds `1` each time function 1 works.
+- Here I uses `let` function to implement the function below.
+- So, when `1` is typed, execute `echo "Hello world"` and let `count` add one. When `2` is typed, show the value of `count`
+
+1. The Function 1 and 2 are close, so we should program them in the same file.
     - I use a variable `count` to count how many times I have printed "Hello World!".
     - `count` is initially 0, and everytime I input `1` to print "Hello World!", `count` will add 1 to itself.
-3. For the Function 3, I need to find the line with file name started with `h`, so it's important to use `awk`.
+2. For the Function 3, I need to find the line with file name started with `h`, so it's important to use `awk`.
     - For the result of `ls -l`, the 9th column is file name, which we should pay attention with.
     - Regular Expression is used to examine if the file name starts with `h`.
     - In order to highlight the target line, I use the ANSI escape code to make the background yellow.
-4. For the Function 4, I need to check if the file exists and is excutable
+3. For the Function 4, I need to check if the file exists and is excutable
     - I use `if [[ -f $file_name && -x $file_name ]]; then` code.
     - After it, I use `head` command to show the first 16 characters.
     - Then I use `xxd -p` to translate characters into ascii code, as well as 16 bytes.
-5. For the Function 5, most of the code is the same as Function 4.
+4. For the Function 5, most of the code is the same as Function 4.
     - A variant `origin_hex` is used to store the first 16 bytes of the file we input
     - For the other files in the same diractory, I use another variant `hex_data` to store their bytes.
     - By combining `origin_hex` and `hex_data`, I can find the file needed.
-6. For the Function 6, ftp is important.
+5. For the Function 6, ftp is important.
     - By exploring the site `alpha.gnu.org`, I can only log in the ftp server anonymously, as well as using `anonymous@alpha.gnu.org`
     - `EOF` is used to run commands in FTP
     - After ftp, `awk` is used to show files we want.
-7. Here I want to list some problems I meet.
+6. Here I want to list some problems I meet.
     1. I can't run `*.sh` created by `touch`.
         - Using `chmod u+x *.sh` is useful.
     2. Function 3 to 6 is a bit complex, for which it's hard to program in one shell script.
