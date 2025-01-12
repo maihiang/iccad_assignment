@@ -1,0 +1,8 @@
+Please CAREFULLY read the questions and follow instructions to answer.
+
+(SR3.1) A Summary Report on experiments in all small tasks assigned after a few classes. 
+Review on our Wechat group talks and find all after-class task assignments. Now very briefly (on <2 pages) report your achievements in these assignments with some screenshots.
+
+(P3.1) Ask your friend to also build demo_x.c (installing X11 development library first) and change the umbrella to another icon (flower?), then try to remotely enter your friend's computer by ssh, display this program on your own computer's screen, along with your local umbrella version program. Try to take one or two pictures (showing command lines, too) for reporting.
+
+(P3.2) Run Python scripts of demo_8qs.py and demo_show8qs.py, read the source code, comments and their outputs. Then (OPTIONALLY) write a Perl or Python script to read in all lines of 8qs.out (i.e., output of demo_8qs.py), analyze these solution lines, and print out the solutions that are truly unique. (Symmetrical solutions are not considered as unique, for example, one solution being mirrored or rotated should be eliminated from the unique list)
